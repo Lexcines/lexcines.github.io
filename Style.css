@@ -12,6 +12,10 @@ header {
   text-align: center;
 }
 
+h1 {
+  text-align: center;
+}
+
 section {
   background: white;
   margin: 1rem auto;
