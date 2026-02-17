@@ -3,7 +3,12 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+title {
+ height: 100;
+  display: flex;
+  justify-content: center; /* horizontal */
+  align-items: center; 
+}
 /* Page background */
 body {
   font-family: "Georgia", serif;
