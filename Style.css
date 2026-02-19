@@ -1,67 +1,109 @@
- {
+/* RESET */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Page background */
+/* BODY */
 body {
-  font-family: "Georgia", serif;
-  background-color: #f4f4f4;
-}
-
-/* Main page container */
-.page {
-  width: 60%;
-  margin: 0 auto;
-}
-
-/* HERO — center title in page */
-.hero {
-  height: 100vh;               /* full screen */
+  font-family: Georgia, serif;
+  background: #f4f4f4;
   display: flex;
-  flex-direction: column;
-  justify-content: center;     /* vertical center */
-  align-items: center;         /* horizontal center */
-  text-align: center;
 }
 
-/* Name */
+/* ========================= */
+/* HERO TITLE CENTERED */
+/* ========================= */
+
+.hero {
+  width: 100%;
+  text-align: center;
+  padding: 60px 0;
+  background: white;
+}
+
 .hero h1 {
   font-size: 42px;
   font-weight: 500;
   margin-bottom: 10px;
-  text-align: center;
 }
 
-/* Subtitle */
 .hero h2 {
   font-size: 20px;
   font-weight: 300;
   font-style: italic;
-}
-
-/* Section layout */
-.section {
-  margin: 140px 0;
-}
-
-/* Section titles */
-.section h3 {
-  font-size: 26px;
-  font-weight: 400;
-  border-left: 3px solid black;
-  padding-left: 12px;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 30px 0;
-  font-size: 14px;
   color: #555;
-};
-  font-weight: 400;
-  border-left: 3px solid black;
-  padding-left: 10px;
+}
+
+/* ========================= */
+/* SIDEBAR */
+/* ========================= */
+
+#sidebar {
+  width: 250px;
+  background: #1f2933;
+  color: white;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding-top: 180px; /* pushes below hero */
+}
+
+#sidebar ul {
+  list-style: none;
+}
+
+#sidebar li {
+  margin: 20px 0;
+}
+
+#sidebar a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px 25px;
+  display: block;
+  transition: 0.3s;
+}
+
+#sidebar a:hover {
+  background: #374151;
+}
+
+/* ========================= */
+/* MAIN CONTENT */
+/* ========================= */
+
+#wrapper {
+  margin-left: 250px; /* same as sidebar width */
+  width: 100%;
+  padding: 40px;
+}
+
+/* Sections */
+.wrapper {
+  margin-bottom: 100px;
+}
+
+.wrapper h1,
+.wrapper h2 {
+  margin-bottom: 20px;
+}
+
+.wrapper p {
+  line-height: 1.6;
+  color: #444;
+}
+
+/* ========================= */
+/* FOOTER */
+/* ========================= */
+
+footer {
+  margin-left: 250px;
+  text-align: center;
+  padding: 20px;
+  background: #e5e7eb;
 }
