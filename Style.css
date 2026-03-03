@@ -49,6 +49,7 @@ body {
   left: 0;
   top: 0;
   padding-top: 180px; /* pushes below hero */
+  transition: 0.3s ease;
 }
 /* Collapsed state */
 #sidebar.collapsed {
@@ -70,12 +71,15 @@ body {
   padding: 10px 25px;
   display: block;
   transition: 0.3s;
+  white-space: nowrap;
 }
 
 #sidebar a:hover {
   background: #FFA6A6;
 }
-
+#sidebar.collapsed a span{
+  display: none;
+}
 /* ========================= */
 /* MAIN CONTENT */
 /* ========================= */
@@ -84,10 +88,11 @@ body {
   margin-left: 250px; /* same as sidebar width */
   width: 100%;
   padding: 40px;
+  transition: 0.3s ease;
 }
 
 /* Sections */
-.wrapper {
+.wrapper.collapsed {
   margin-bottom: 100px;
 }
 
@@ -110,4 +115,19 @@ footer {
   text-align: center;
   padding: 20px;
   background: #e5e7eb;
+}
+footer.collapsed {
+  margin-left: 70px;
+}
+
+#toggleBtn {
+  position: fixed;
+  top: 20px
+  left: 20px
+  background: #EB4C4C;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  z-index: 1000;
 }
