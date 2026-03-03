@@ -27,7 +27,18 @@
 				</div>
 			</section>
 	  <div id="wrapper">
+<script>
+  const toggleBtn = document.getElementById("toggleBtn");
+  const sidebar = document.getElementById("sidebar");
+  const wrapper = document.getElementById("wrapper");
+  const footer = document.querySelector("footer");
 
+  toggleBtn.addEventListener("click", () => {
+    sidebar.classList.toggle("collapsed");
+    wrapper.classList.toggle("collapsed");
+    footer.classList.toggle("collapsed");
+  });
+</script>
 				<!-- Intro -->
 					<section id="intro" class="wrapper style1 fullscreen fade-up">
 						<div class="inner">
