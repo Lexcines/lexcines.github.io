@@ -14,31 +14,20 @@
       <h1>Lexcine Stevens</h1>
       <h2>IT Professional | Data Analyst</h2>
     </header>
-
+<button id="toggleBtn">☰</button>
    <section id="sidebar">
 				<div class="inner">
 					<nav>
 						<ul>
 							<li><a href="#"><span>Welcome</span></a></li>
-							<li><a href="#one"> IT Projects</a></li>
-							<li><a href="#two">Other Works</a></li>
+							<li><a href="#"><span>IT Projects</span></a></li>
+							<li><a href="#"><span>Other Projects</span></a></li>
 						</ul>
 					</nav>
 				</div>
 			</section>
 	  <div id="wrapper">
-<script>
-  const toggleBtn = document.getElementById("toggleBtn");
-  const sidebar = document.getElementById("sidebar");
-  const wrapper = document.getElementById("wrapper");
-  const footer = document.querySelector("footer");
 
-  toggleBtn.addEventListener("click", () => {
-    sidebar.classList.toggle("collapsed");
-    wrapper.classList.toggle("collapsed");
-    footer.classList.toggle("collapsed");
-  });
-</script>
 				<!-- Intro -->
 					<section id="intro" class="wrapper style1 fullscreen fade-up">
 						<div class="inner">
@@ -125,4 +114,17 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+							<script>
+  const toggleBtn = document.getElementById("toggleBtn");
+  const sidebar = document.getElementById("sidebar");
+  const wrapper = document.getElementById("wrapper");
+  const footer = document.querySelector("footer");
+
+  toggleBtn.addEventListener("click", () => {
+    sidebar.classList.toggle("collapsed");
+    wrapper.classList.toggle("collapsed");
+    footer.classList.toggle("collapsed");
+  });
+</script>
 </body>
