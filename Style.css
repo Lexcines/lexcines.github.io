@@ -50,6 +50,10 @@ body {
   top: 0;
   padding-top: 180px; /* pushes below hero */
 }
+/* Collapsed state */
+#sidebar.collapsed {
+  width: 70px;
+}
 
 #sidebar ul {
   list-style: none;
