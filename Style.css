@@ -20,7 +20,10 @@ body {
   width: 100%;
   text-align: center;
   padding: 60px 0;
-  background:#FFEDC7;
+  background-image: url("images/backdrop.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  bacground-size: contain;
 }
 
 .hero h1 {
